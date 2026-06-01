@@ -39,7 +39,6 @@ class ConsoleTerminal(ctk.CTkFrame):
         self.text_area = tk.Text(self, bg=Config.COLOR_BG_DARK, fg=Config.COLOR_TEXT_BODY, insertbackground=Config.COLOR_NEON_RED, font=(Config.FONT_TERMINAL, 11), relief="flat", highlightthickness=0, state="disabled")
         self.text_area.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
         
-        # Hatalı olan fg parametreleri, sorun çıkarmayan foreground ile değiştirildi
         self.text_area.tag_config("INFO", foreground=Config.COLOR_NEON_BLUE)
         self.text_area.tag_config("SUCCESS", foreground=Config.COLOR_NEON_GREEN)
         self.text_area.tag_config("ERROR", foreground=Config.COLOR_NEON_RED)
